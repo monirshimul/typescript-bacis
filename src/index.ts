@@ -68,13 +68,15 @@ let playerData: userType[] = [
 ]
 
 const userOne = new User("Monir", "monir@gmail.com")
-
-let allUserClass: userType[] = []; 
+console.log("userOne",userOne.sayHi())
+let allUserClass: User[] = []; 
 playerData.map((v,i)=>{
     const user = new User(v.name, v.email)
     allUserClass.push(user)
 
 })
 
-console.log("All User",allUserClass)
+console.log("All User", allUserClass[2].sayHi())
+
+
 

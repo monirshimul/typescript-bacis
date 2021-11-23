@@ -40,9 +40,10 @@ let playerData = [
     }
 ];
 const userOne = new User("Monir", "monir@gmail.com");
+console.log("userOne", userOne.sayHi());
 let allUserClass = [];
 playerData.map((v, i) => {
     const user = new User(v.name, v.email);
     allUserClass.push(user);
 });
-console.log("All User", allUserClass);
+console.log("All User", allUserClass[2].sayHi());
